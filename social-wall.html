@@ -1,0 +1,1565 @@
+ <!DOCTYPE html> <!--[if lt IE 9]>         <html class="lt-ie9" lang="en"> <![endif]--> <!--[if gte IE 9]><!--> <html lang="en"> <!--<![endif]--> 
+<!-- Mirrored from www.bnpparibasfortis.com/social-wall by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Nov 2020 11:18:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <title>
+	Social Wall
+</title> <meta name="description" content=""> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="shortcut icon" type="image/x-icon" href="ResourcePackages/Newsroom/assets/dist/images/favicon.ico"> <!-- Open Graph meta --> <meta property="fb:pages" content="250345941651306"> <meta property="fb:pages" content="195153047210884"> <!-- Chrome, Firefox OS and Opera --> <meta name="theme-color" content="#00965e"> <!-- Windows Phone --> <meta name="msapplication-navbutton-color" content="#00965e"> <!-- iOS Safari --> <meta name="apple-mobile-web-app-status-bar-style" content="#00965e"> <script src="ResourcePackages/Corporate/assets/dist/js/vendor/jquery-1.12.1.minefea.js?package=Corporate" type="text/javascript"></script><script src="ResourcePackages/Corporate/assets/dist/js/vendor/modernizr.custom.56605efea.js?package=Corporate" type="text/javascript"></script><script src="ResourcePackages/Corporate/assets/dist/js/vendor/jRespond.minefea.js?package=Corporate" type="text/javascript"></script><link href="ResourcePackages/Corporate/assets/dist/css/vendor/mediaelementplayerefea.css?package=Corporate" rel="stylesheet" type="text/css" /><link href="ResourcePackages/Corporate/assets/dist/css/vendor/magnific-popupefea.css?package=Corporate" rel="stylesheet" type="text/css" /><link href="ResourcePackages/Corporate/assets/dist/css/vendor/plyrefea.css?package=Corporate" rel="stylesheet" type="text/css" /><link href="ResourcePackages/Corporate/assets/dist/css/mainefea.css?package=Corporate" rel="stylesheet" type="text/css" /> <!-- Vendor JS --> <script type="text/javascript" src="ResourcePackages/Corporate/assets/dist/js/vendor/jquery.cookie.js"></script> <script type="text/javascript" src="ResourcePackages/Corporate/assets/dist/js/vendor/masonry.pkgd.min.js"></script> <!-- Custom JS --> <script type="text/javascript" src="ResourcePackages/Corporate/assets/dist/js/utils.js"></script> <script type="text/javascript" src="ResourcePackages/Corporate/assets/dist/js/toolbox.cookiebar.js"></script> <script type="text/javascript">var sf_appPath='index.html';</script><script type="text/javascript">
+$(function(){
+    var sortedList = {},
+    list = $('.main-nav-wrapper .modal-containers li'),
+    placeholderGroups = $('.main-nav-wrapper .supra-links .dd-group'),
+    iterrator = 0;
+
+    list.each(function(index,item , list){
+        var className = "";
+        if(typeof item.classList != "undefined"){
+                className = item.classList[0];
+        }
+        else{
+                className = item.className;
+        }
+        sortedList[className] = sortedList[className] || [];
+        sortedList[className].push(item);
+
+    });
+
+    for(var item in sortedList) {
+
+        var newListMarkup = $('<ul />');
+        newListMarkup.append(sortedList[item]);
+
+        $(placeholderGroups[iterrator]).append(newListMarkup);
+
+        iterrator++;
+    }
+  
+  
+    $('.sflanguageLnk').each(function(){
+        var langText = $(this).attr('lang');
+        $(this).children().text(langText);
+    });
+  
+   function getCookie(cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for(var i=0; i<ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0)==' ') c = c.substring(1);
+          if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+      }
+      return "";
+    }
+ 
+ function setCookie(cname, cvalue, exdays, path) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + "; " + expires + ("%3b%20path%3d/index.html");
+ }
+ 
+  function deleteCookie(name,path,domain) {
+  if (getCookie(name)) {
+    document.cookie = name + "=" +
+    ((path) ? "; path=" + path : "") +
+    ((domain) ? "; domain=" + domain : "") +
+    "; expires=Thu, 01-Jan-70 00:00:01 GMT";
+    }
+  }
+ 
+ $('.sflanguageLnk').on('click', function(){
+        var cookieName = "bnppflanguageselector";
+        var langText = $(this).attr('lang');       
+ 
+  if(langText != 'en' && langText != 'fr' && langText != 'nl') return; // if the lang data attribute is not set properly (security for highjacking)
+ 
+  var cookieNameStr = getCookie(cookieName);
+   
+        if(cookieNameStr != '')
+        {
+          deleteCookie(cookieName, 'index.html', document.domain);
+          deleteCookie(cookieName, '/nl', document.domain);
+          deleteCookie(cookieName, '/fr', document.domain);// delete prevously set cookie
+   }  
+  setCookie(cookieName, langText, 60, ''); // sets new cookie  
+       
+    });
+});
+</script><script type="text/javascript">
+//dirty fix to remove double urlname in articles
+$(function(){
+	$(".sflanguageItem").find("a").on("click",function(){	
+	if(window.location.href.toLowerCase().indexOf('article/index.html') > 0){ 	
+	var href = $(this)[0].href;	
+	href= href.substring(0, href.lastIndexOf('index.html'));	
+	window.location=href;	
+	return false;
+	}
+	});
+});
+</script><script type="text/javascript">
+function openLink(culture) {
+    var url = $('[data-sf-role="' + culture + '"]').val();
+    window.location = url;
+}
+</script><meta name="Generator" content="Sitefinity 12.1.7130.0 PU" /><link rel="canonical" href="social-wall.html" /><meta name="og:title" content="Social Wall" /><meta name="og:url" content="https://www.bnpparibasfortis.com/social-wall" /><meta name="og:description" content="" /></head> <body class="layout-pagedefault new-header page-social-wall"> <div> 
+    <script>
+    $(function () {
+          setLanguageCookie("bnppflanguageselector", "en", 600, '');
+    });
+    </script>
+
+
+
+
+
+
+ </div> <div class="offcanvas"> <div class="mm_offcanvas"> <div id="menuMobile" class="mm_offcanvas_inner"> <div class="mm_nav_menu" id="menuMobileContent"> 
+
+
+
+
+<nav id="mainMenuWidget" class="menu navigation_menu" role="navigation">
+    <ul class="menu__first-level">
+
+
+
+                    <li class="menu__item">
+                        <a href="index.html" class="link link--home">
+                            <i class="link--home__icon icon-home"></i>
+                            <span class="link--home__title">Home</span>
+                        </a>
+                    </li>
+        <li class="menu__item has-sub-menu ">
+            <a href="#" class="link">Your bank</a>
+            <nav class="sub-menu menu__second-level">
+                <div class="container">
+                    <ul>
+                                    <li class="menu__item--second-level  ">
+                <a href="your-bank/about-us.html" target="_self" class="link">About Us</a>
+            </li>
+            <li class="menu__item--second-level  ">
+                <a href="your-bank/news.html" target="_self" class="link">News</a>
+            </li>
+            <li class="menu__item--second-level  ">
+                <a href="your-bank/main-activities.html" target="_self" class="link">Main activities</a>
+            </li>
+             <li class="menu__item--second-level has-sub-menu ">
+                <a href="your-bank/sponsoring.html" target="_self" class="link">Sponsoring</a>
+                <nav class="sub-menu menu__third-level">
+                    <div class="container">
+                        <ul>
+                                    <li class="menu__item--third-level  ">
+            <a href="your-bank/sponsoring/sponsoring.html" target="_self" class="link">Sponsoring</a>
+        </li>
+        <li class="menu__item--third-level  ">
+            <a href="your-bank/sponsoring/tennis.html" target="_self" class="link">Tennis</a>
+        </li>
+        <li class="menu__item--third-level  ">
+            <a href="your-bank/sponsoring/culture.html" target="_self" class="link">Culture</a>
+        </li>
+        <li class="menu__item--third-level  ">
+            <a href="your-bank/sponsoring/film.html" target="_self" class="link">Film</a>
+        </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </li>
+            <li class="menu__item--second-level  ">
+                <a href="your-bank/history-and-art-heritage.html" target="_self" class="link">History and art heritage</a>
+            </li>
+            <li class="menu__item--second-level  ">
+                <a href="your-bank/directors.html" target="_self" class="link">Corporate Governance</a>
+            </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </li>
+        <li class="menu__item has-sub-menu ">
+            <a href="#" class="link">Positive Banking</a>
+            <nav class="sub-menu menu__second-level">
+                <div class="container">
+                    <ul>
+                                    <li class="menu__item--second-level  ">
+                <a href="positive-banking.html" target="_self" class="link">Welcome</a>
+            </li>
+            <li class="menu__item--second-level  ">
+                <a href="positive-banking/make-life-easier.html" target="_self" class="link">Making your life easier</a>
+            </li>
+            <li class="menu__item--second-level  ">
+                <a href="positive-banking/enable-to-grow.html" target="_self" class="link">Enabling you to grow</a>
+            </li>
+            <li class="menu__item--second-level  ">
+                <a href="positive-banking/sustainable-world.html" target="_self" class="link">Sustainable World</a>
+            </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </li>
+            <li class="menu__item  ">
+                <a href="our-commitment.html" target="_self" class="link">Our commitment</a>
+            </li>
+        <li class="menu__item has-sub-menu ">
+            <a href="#" class="link">Investors</a>
+            <nav class="sub-menu menu__second-level">
+                <div class="container">
+                    <ul>
+                                    <li class="menu__item--second-level  ">
+                <a href="investors/financial-reports.html" target="_self" class="link">Financial reports</a>
+            </li>
+            <li class="menu__item--second-level  ">
+                <a href="investors/banking-entities-ratings.html" target="_self" class="link">Banking entities ratings</a>
+            </li>
+            <li class="menu__item--second-level  ">
+                <a href="investors/debt-programme-ratings.html" target="_self" class="link">Debt programme ratings</a>
+            </li>
+            <li class="menu__item--second-level  ">
+                <a href="investors/offering-documents.html" target="_self" class="link">Offering documents</a>
+            </li>
+            <li class="menu__item--second-level  ">
+                <a href="investors/securitization.html" target="_self" class="link">Securitization</a>
+            </li>
+            <li class="menu__item--second-level  ">
+                <a href="investors/coveredbonds.html" target="_self" class="link">Covered Bonds</a>
+            </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </li>
+            <li class="menu__item  ">
+                <a href="jobs/home.html" target="_self" class="link">Jobs</a>
+            </li>
+        <li class="menu__item has-sub-menu ">
+            <a href="#" class="link">Newsroom</a>
+            <nav class="sub-menu menu__second-level">
+                <div class="container">
+                    <ul>
+                                    <li class="menu__item--second-level  ">
+                <a href="newsroom/home.html" target="_self" class="link">Welcome</a>
+            </li>
+            <li class="menu__item--second-level  ">
+                <a href="newsroom/press-releases.html" target="_self" class="link">Press Releases</a>
+            </li>
+            <li class="menu__item--second-level  ">
+                <a href="newsroom/all-news.html" target="_self" class="link">News</a>
+            </li>
+            <li class="menu__item--second-level  ">
+                <a href="newsroom/events.html" target="_self" class="link">Events</a>
+            </li>
+            <li class="menu__item--second-level  ">
+                <a href="newsroom/press-contacts.html" target="_self" class="link">Press Contacts</a>
+            </li>
+            <li class="menu__item--second-level  ">
+                <a href="newsroom/media-kit.html" target="_self" class="link">Media Kit</a>
+            </li>
+            <li class="menu__item--second-level  ">
+                <a href="newsroom/news-alerts.html" target="_self" class="link">News Alerts</a>
+            </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </li>
+    </ul>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+<nav class="menu--suprabar-mobile navigation_menu" role="navigation">
+
+    <ul class="menu__first-level">
+            <li class="menu__item ">
+                <a href="other-websites.html" target="_self" class="link">Other websites</a>
+            </li>
+            <li class="menu__item ">
+                <a href="contact.html" target="_self" class="link">Contact us</a>
+            </li>
+    </ul>
+</nav>
+
+
+
+
+<div>
+    <div id="languageSelectionMobile" class="language-selection--mobile mm_axes language">
+            <ul class="language-list">
+                    <li class="menu__item ">
+                        <a href="#" onclick="openLink('fr'); return false;" class="link">fr</a>
+                    </li>
+                    <li class="menu__item ">
+                        <a href="#" onclick="openLink('nl'); return false;" class="link">nl</a>
+                    </li>
+            </ul>
+    </div>
+</div>
+
+ </div> </div> </div> </div> <div class="wcm-navigation"> <a class="nav_small"> <span class="hamburger_icon"> <span> </span> </span> <span class="menu_txt menu">Menu</span> </a> </div> <div class="CSR page-social-wall"> <header class="header"> <div class="top_header"> <div class="top_header_inner"> <div class="nav_col_left"> 
+
+<nav class="menu" role="navigation">
+
+    <ul class="select_item">
+            <li class="menu__item ">
+                <a href="https://www.bnpparibasfortis.be/en/index-EN" target="_self" class="link">Personal</a>
+            </li>
+            <li class="menu__item ">
+                <a href="https://www.bnpparibasfortis.be/en/Professionals" target="_self" class="link">Entrepreneurs</a>
+            </li>
+            <li class="menu__item ">
+                <a href="https://www.bnpparibasfortis.be/en/Home-Private-Banking-EN" target="_self" class="link">Private Banking	</a>
+            </li>
+            <li class="menu__item ">
+                <a href="https://www.bnpparibasfortis.be/en/Homepage-Expats-EN" target="_self" class="link">Expats</a>
+            </li>
+            <li class="menu__item ">
+                <a href="https://companies.bnpparibasfortis.be/en" target="_self" class="link">Corporates</a>
+            </li>
+        <li class="menu__item active"><a></a></li>
+    </ul>
+</nav>
+
+
+
+ </div> <div class="nav_col_right"> <div class="nav_right_wrapper"> 
+
+
+
+<!-- for old header -->
+<div class="menu--brandbar">
+    <div id="languageSelection" class="language-selection">
+           <a class="link language-selected" id="languageSelectionButton">
+               <span class="label">en</span>
+                <i class="carret"></i>
+            </a>
+            <ul class="language-list">
+                    <li class="menu__item menu__item--current language-en">
+                        <a href="#" 
+                           onclick="openLink('en'); return false;"
+                           class="link">English</a>
+                    </li>
+                    <li class="menu__item  language-fr">
+                        <a href="#" 
+                           onclick="openLink('fr'); return false;"
+                           class="link">fran&#231;ais</a>
+                    </li>
+                    <li class="menu__item  language-nl">
+                        <a href="#" 
+                           onclick="openLink('nl'); return false;"
+                           class="link">Nederlands</a>
+                    </li>
+            </ul>
+    </div>
+</div>
+<!-- for new header -->
+<div class="lng_change">
+           <a class="link language-selected clickable_lng">
+              en
+            </a>
+            <ul>
+                    <li class="menu__item--current language-en">
+                        <a href="#" 
+                           onclick="openLink('en'); return false;">en</a>
+                    </li>
+                    <li class=" language-fr">
+                        <a href="#" 
+                           onclick="openLink('fr'); return false;">fr</a>
+                    </li>
+                    <li class=" language-nl">
+                        <a href="#" 
+                           onclick="openLink('nl'); return false;">nl</a>
+                    </li>
+            </ul>
+</div> </div> </div> </div> </div> <div class="nav_header"> <div class="nav_header_inner"> <div class="nav_col_left"> <a href="en.html" aria-label="BNP Paribas Fortis" class="brand_logo" target="_self"></a> <p class="caption">The bank for a changing world</p> </div> </div> </div> <div id="mainMenu" class="main-menu"> <div id="menuDesktopContent" class="container"> 
+ </div> </div> <script src="ScriptResource4ac1.js?d=4bMApOb58R6igmkUEZ0eXlDPSFnH9yRq61YhMExveMVh5L9FP6kVanxbZiSXdYu5J1_L46fDqVVz52z7KnjQ0quJ-GyrC35ESITDSsyaOdcWdfchtbSQ70DAGDUKI7Blc5q-ilD3ZJzO5qdICplJcUtc1z4k04XyPYzUNsMhVao04qf33jN83Zs20P0w8Z-90&amp;t=ffffffffd9f18864" type="text/javascript"></script><script src="ScriptResourceef03.js?d=EydukmxBmDstn7gSYzQESKpIXwgSIbJOcEw6Dj7ajjS1AEa1AsHH_k7SLWgU-G2RnT3a_8yirI5BoPOMOrxIq3qcWKIdfRKhxBcKK8Paf8IpHXyBFMkKXKuK6ZXq5S8txPKqCAnzIpXztH07eQ1Op1P4pxZ9WW2-yPDDy4XnEsaZrEFVSaUm21aT0hmTtBzS0&amp;t=ffffffffd9f18864" type="text/javascript"></script> </header> <div class="wrapper-content"> <div class="global-content"> <div class="page__content clearfix"> 
+ <div class="container"> 
+<div class="breadcrum-corpo">
+    <ul class="breadcrumb">
+                <li class="breadcrumb__item"><a href="index.html" class="link">Home </a></li>
+                <li class="active breadcrumb__item">Social Wall</li>
+    </ul>
+</div> </div> <div class="main-content"> 
+
+
+
+    <div class="container">
+        <div class="section ">
+                <h1 class="page__title">Social Wall</h1> 
+            <ul class="content-box-list--social clearfix">
+                    <li class="content-box--social content-box--instagram">
+                        <div class="content-box__type-label">
+                            <span class="sr-only">instagram</span>
+                            <i class="icon-type-instagram"></i>
+                        </div>
+                            <div class="social-content-picture">
+                                <a class="social-content-media" href="https://www.instagram.com/p/CHQSDMejggi/" target="_blank">
+                                    <img src="https://www.instagram.com/p/CHQSDMejggi/media/?size=l" alt="" />
+                                </a>
+                            </div>
+                        <div class="social-content">
+                            <span class="social-content__text" data-lining data-from="5" data-auto-resize></span>
+                        </div>
+                        
+                        <div class="social-meta">
+                                <div class="social-meta__avatar">
+                                    <a target="_blank">
+                                        <img src="../scontent-bru2-1.xx.fbcdn.net/v/t51.2885-15/121611922_339301330509618_8691394580402539921_n446b.jpg?_nc_cat=110&amp;ccb=2&amp;_nc_sid=86c713&amp;_nc_ohc=jyvEPrCev7YAX_LB9qJ&amp;_nc_ht=scontent-bru2-1.xx&amp;oh=d3a5f1e1aceb280782278ffb9cf6c3fd&amp;oe=5FCAA0AC" />
+                                    </a>
+                                </div>
+                            <div class="social-meta__detail">
+                                <h4 class="social-meta__name">
+@bnpparibasfortisprivatebanking                                </h4>
+                                <span class="social-meta__time">Nov 6 16:36 </span>
+                            </div>
+                        </div>
+                        <ul class="social-icon__list">
+                            <li class="social-icon__item share">
+                                <a class="social-icon icon-connect open-share__box"></a>
+                                <div class="share__box">
+                                    <ul class="share__box-icons-list">
+                                        <li class="share__box-icons-items"><a class="icon-twitter" href="https://twitter.com/home?status=https://www.instagram.com/p/CHQSDMejggi/" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.instagram.com/p/CHQSDMejggi/" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-linkedin-mini" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.instagram.com/p/CHQSDMejggi/&amp;title=&amp;summary=&amp;source=" target="_blank" onclick="return !window.open(this.href, 'LinkedIn', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items hidden-lg"><a class="icon-whats-app" href="whatsapp://send?text=https://www.instagram.com/p/CHQSDMejggi/"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-mail-mini" href="mailto:?subject=SocialWall&amp;body=https://www.instagram.com/p/CHQSDMejggi/"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="modal-info">
+                                    <span>Share</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item repost">
+                                <a class="social-icon icon-repost" href="https://twitter.com/intent/retweet?tweet_id=3683452038373814" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Retweet</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item like">
+                                <a class="social-icon icon-like-stroke" href="https://twitter.com/intent/like?tweet_id=3683452038373814" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Like</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content-box--social content-box--instagram">
+                        <div class="content-box__type-label">
+                            <span class="sr-only">instagram</span>
+                            <i class="icon-type-instagram"></i>
+                        </div>
+                            <div class="social-content-picture">
+                                <a class="social-content-media" href="https://www.instagram.com/p/CHQSDMejggi/" target="_blank">
+                                    <img src="https://www.instagram.com/p/CHQSDMejggi/media/?size=l" alt="" />
+                                </a>
+                            </div>
+                        <div class="social-content">
+                            <span class="social-content__text" data-lining data-from="5" data-auto-resize></span>
+                        </div>
+                        
+                        <div class="social-meta">
+                                <div class="social-meta__avatar">
+                                    <a target="_blank">
+                                        <img src="../scontent-bru2-1.xx.fbcdn.net/v/t51.2885-15/121611922_339301330509618_8691394580402539921_n446b.jpg?_nc_cat=110&amp;ccb=2&amp;_nc_sid=86c713&amp;_nc_ohc=jyvEPrCev7YAX_LB9qJ&amp;_nc_ht=scontent-bru2-1.xx&amp;oh=d3a5f1e1aceb280782278ffb9cf6c3fd&amp;oe=5FCAA0AC" />
+                                    </a>
+                                </div>
+                            <div class="social-meta__detail">
+                                <h4 class="social-meta__name">
+@bnpparibasfortisprivatebanking                                </h4>
+                                <span class="social-meta__time">Nov 6 16:30 </span>
+                            </div>
+                        </div>
+                        <ul class="social-icon__list">
+                            <li class="social-icon__item share">
+                                <a class="social-icon icon-connect open-share__box"></a>
+                                <div class="share__box">
+                                    <ul class="share__box-icons-list">
+                                        <li class="share__box-icons-items"><a class="icon-twitter" href="https://twitter.com/home?status=https://www.instagram.com/p/CHQSDMejggi/" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.instagram.com/p/CHQSDMejggi/" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-linkedin-mini" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.instagram.com/p/CHQSDMejggi/&amp;title=&amp;summary=&amp;source=" target="_blank" onclick="return !window.open(this.href, 'LinkedIn', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items hidden-lg"><a class="icon-whats-app" href="whatsapp://send?text=https://www.instagram.com/p/CHQSDMejggi/"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-mail-mini" href="mailto:?subject=SocialWall&amp;body=https://www.instagram.com/p/CHQSDMejggi/"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="modal-info">
+                                    <span>Share</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item repost">
+                                <a class="social-icon icon-repost" href="https://twitter.com/intent/retweet?tweet_id=3683452038373814" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Retweet</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item like">
+                                <a class="social-icon icon-like-stroke" href="https://twitter.com/intent/like?tweet_id=3683452038373814" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Like</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content-box--social content-box--instagram">
+                        <div class="content-box__type-label">
+                            <span class="sr-only">instagram</span>
+                            <i class="icon-type-instagram"></i>
+                        </div>
+                            <div class="social-content-picture">
+                                <a class="social-content-media" href="https://www.instagram.com/p/CHNz39GDmjS/" target="_blank">
+                                    <img src="https://www.instagram.com/p/CHNz39GDmjS/media/?size=l" alt="" />
+                                </a>
+                            </div>
+                        <div class="social-content">
+                            <span class="social-content__text" data-lining data-from="5" data-auto-resize>We zijn enorm verheugd om ons partnership met Touring aan te kondigen! Zo zullen we onze klanten de beste bijstand bij buitenlandse reizen kunnen aanbieden. Ontdek alle voordelen van deze samenwerking. <a class="hashtag" href="https://www.instagram.com/explore/tags/PositiveBanking" target="_blank">#PositiveBanking</a>
+</span>
+                        </div>
+                        
+                        <div class="social-meta">
+                                <div class="social-meta__avatar">
+                                    <a target="_blank">
+                                        <img src="../scontent-bru2-1.xx.fbcdn.net/v/t51.2885-15/57253568_420991278721765_25924551447674880_nf092.jpg?_nc_cat=1&amp;ccb=2&amp;_nc_sid=86c713&amp;_nc_ohc=UKekpg_XfdEAX_WKkmZ&amp;_nc_ht=scontent-bru2-1.xx&amp;oh=d5009b4bea66815cde01faebacbb5440&amp;oe=5FCB2161" />
+                                    </a>
+                                </div>
+                            <div class="social-meta__detail">
+                                <h4 class="social-meta__name">
+@bnpparibasfortis                                </h4>
+                                <span class="social-meta__time">Nov 5 17:28 </span>
+                            </div>
+                        </div>
+                        <ul class="social-icon__list">
+                            <li class="social-icon__item share">
+                                <a class="social-icon icon-connect open-share__box"></a>
+                                <div class="share__box">
+                                    <ul class="share__box-icons-list">
+                                        <li class="share__box-icons-items"><a class="icon-twitter" href="https://twitter.com/home?status=https://www.instagram.com/p/CHNz39GDmjS/" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.instagram.com/p/CHNz39GDmjS/" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-linkedin-mini" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.instagram.com/p/CHNz39GDmjS/&amp;title=&amp;summary=&amp;source=" target="_blank" onclick="return !window.open(this.href, 'LinkedIn', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items hidden-lg"><a class="icon-whats-app" href="whatsapp://send?text=https://www.instagram.com/p/CHNz39GDmjS/"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-mail-mini" href="mailto:?subject=SocialWall&amp;body=https://www.instagram.com/p/CHNz39GDmjS/"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="modal-info">
+                                    <span>Share</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item repost">
+                                <a class="social-icon icon-repost" href="https://twitter.com/intent/retweet?tweet_id=3383202938466034" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Retweet</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item like">
+                                <a class="social-icon icon-like-stroke" href="https://twitter.com/intent/like?tweet_id=3383202938466034" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Like</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content-box--social content-box--instagram">
+                        <div class="content-box__type-label">
+                            <span class="sr-only">instagram</span>
+                            <i class="icon-type-instagram"></i>
+                        </div>
+                            <div class="social-content-picture">
+                                <a class="social-content-media" href="https://www.instagram.com/p/CHNz3wOgBA6/" target="_blank">
+                                    <img src="https://www.instagram.com/p/CHNz3wOgBA6/media/?size=l" alt="" />
+                                </a>
+                            </div>
+                        <div class="social-content">
+                            <span class="social-content__text" data-lining data-from="5" data-auto-resize>Nous sommes heureux de vous annoncer notre partenariat avec Touring. Nous pourrons offrir à nos clients le meilleur de l'assistance voyage à l'étranger. Découvrez en détails tous les avantages de cette nouvelle collaboration. <a class="hashtag" href="https://www.instagram.com/explore/tags/PositiveBanking" target="_blank">#PositiveBanking</a>
+</span>
+                        </div>
+                        
+                        <div class="social-meta">
+                                <div class="social-meta__avatar">
+                                    <a target="_blank">
+                                        <img src="../scontent-bru2-1.xx.fbcdn.net/v/t51.2885-15/57253568_420991278721765_25924551447674880_nf092.jpg?_nc_cat=1&amp;ccb=2&amp;_nc_sid=86c713&amp;_nc_ohc=UKekpg_XfdEAX_WKkmZ&amp;_nc_ht=scontent-bru2-1.xx&amp;oh=d5009b4bea66815cde01faebacbb5440&amp;oe=5FCB2161" />
+                                    </a>
+                                </div>
+                            <div class="social-meta__detail">
+                                <h4 class="social-meta__name">
+@bnpparibasfortis                                </h4>
+                                <span class="social-meta__time">Nov 5 17:28 </span>
+                            </div>
+                        </div>
+                        <ul class="social-icon__list">
+                            <li class="social-icon__item share">
+                                <a class="social-icon icon-connect open-share__box"></a>
+                                <div class="share__box">
+                                    <ul class="share__box-icons-list">
+                                        <li class="share__box-icons-items"><a class="icon-twitter" href="https://twitter.com/home?status=https://www.instagram.com/p/CHNz3wOgBA6/" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.instagram.com/p/CHNz3wOgBA6/" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-linkedin-mini" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.instagram.com/p/CHNz3wOgBA6/&amp;title=&amp;summary=&amp;source=" target="_blank" onclick="return !window.open(this.href, 'LinkedIn', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items hidden-lg"><a class="icon-whats-app" href="whatsapp://send?text=https://www.instagram.com/p/CHNz3wOgBA6/"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-mail-mini" href="mailto:?subject=SocialWall&amp;body=https://www.instagram.com/p/CHNz3wOgBA6/"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="modal-info">
+                                    <span>Share</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item repost">
+                                <a class="social-icon icon-repost" href="https://twitter.com/intent/retweet?tweet_id=3383202938466034" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Retweet</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item like">
+                                <a class="social-icon icon-like-stroke" href="https://twitter.com/intent/like?tweet_id=3383202938466034" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Like</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content-box--social content-box--instagram">
+                        <div class="content-box__type-label">
+                            <span class="sr-only">instagram</span>
+                            <i class="icon-type-instagram"></i>
+                        </div>
+                            <div class="social-content-picture">
+                                <a class="social-content-media" href="https://www.instagram.com/p/CHNz39GDmjS/" target="_blank">
+                                    <img src="https://www.instagram.com/p/CHNz39GDmjS/media/?size=l" alt="" />
+                                </a>
+                            </div>
+                        <div class="social-content">
+                            <span class="social-content__text" data-lining data-from="5" data-auto-resize>We zijn enorm verheugd om ons partnership met Touring aan te kondigen! Zo zullen we onze klanten de beste bijstand bij buitenlandse reizen kunnen aanbieden. Ontdek alle voordelen van deze samenwerking. <a class="hashtag" href="https://www.instagram.com/explore/tags/PositiveBanking" target="_blank">#PositiveBanking</a>
+</span>
+                        </div>
+                        
+                        <div class="social-meta">
+                                <div class="social-meta__avatar">
+                                    <a target="_blank">
+                                        <img src="../scontent-bru2-1.xx.fbcdn.net/v/t51.2885-15/57253568_420991278721765_25924551447674880_nf092.jpg?_nc_cat=1&amp;ccb=2&amp;_nc_sid=86c713&amp;_nc_ohc=UKekpg_XfdEAX_WKkmZ&amp;_nc_ht=scontent-bru2-1.xx&amp;oh=d5009b4bea66815cde01faebacbb5440&amp;oe=5FCB2161" />
+                                    </a>
+                                </div>
+                            <div class="social-meta__detail">
+                                <h4 class="social-meta__name">
+@bnpparibasfortis                                </h4>
+                                <span class="social-meta__time">Nov 5 17:28 </span>
+                            </div>
+                        </div>
+                        <ul class="social-icon__list">
+                            <li class="social-icon__item share">
+                                <a class="social-icon icon-connect open-share__box"></a>
+                                <div class="share__box">
+                                    <ul class="share__box-icons-list">
+                                        <li class="share__box-icons-items"><a class="icon-twitter" href="https://twitter.com/home?status=https://www.instagram.com/p/CHNz39GDmjS/" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.instagram.com/p/CHNz39GDmjS/" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-linkedin-mini" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.instagram.com/p/CHNz39GDmjS/&amp;title=&amp;summary=&amp;source=" target="_blank" onclick="return !window.open(this.href, 'LinkedIn', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items hidden-lg"><a class="icon-whats-app" href="whatsapp://send?text=https://www.instagram.com/p/CHNz39GDmjS/"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-mail-mini" href="mailto:?subject=SocialWall&amp;body=https://www.instagram.com/p/CHNz39GDmjS/"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="modal-info">
+                                    <span>Share</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item repost">
+                                <a class="social-icon icon-repost" href="https://twitter.com/intent/retweet?tweet_id=3383202938466034" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Retweet</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item like">
+                                <a class="social-icon icon-like-stroke" href="https://twitter.com/intent/like?tweet_id=3383202938466034" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Like</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content-box--social content-box--instagram">
+                        <div class="content-box__type-label">
+                            <span class="sr-only">instagram</span>
+                            <i class="icon-type-instagram"></i>
+                        </div>
+                            <div class="social-content-picture">
+                                <a class="social-content-media" href="https://www.instagram.com/p/CHQSDMejggi/" target="_blank">
+                                    <img src="https://www.instagram.com/p/CHQSDMejggi/media/?size=l" alt="" />
+                                </a>
+                            </div>
+                        <div class="social-content">
+                            <span class="social-content__text" data-lining data-from="5" data-auto-resize>We zijn enorm verheugd om ons partnership met Touring aan te kondigen! Zo zullen we onze klanten de beste bijstand bij buitenlandse reizen kunnen aanbieden. Ontdek alle voordelen van deze samenwerking. <a class="hashtag" href="https://www.instagram.com/explore/tags/PositiveBanking" target="_blank">#PositiveBanking</a>
+</span>
+                        </div>
+                        
+                        <div class="social-meta">
+                                <div class="social-meta__avatar">
+                                    <a target="_blank">
+                                        <img src="../scontent-bru2-1.xx.fbcdn.net/v/t51.2885-15/57253568_420991278721765_25924551447674880_n9be9.jpg?_nc_cat=1&amp;ccb=2&amp;_nc_sid=86c713&amp;_nc_ohc=nfoaV2KQ_MgAX_J0qbj&amp;_nc_ht=scontent-bru2-1.xx&amp;oh=8df80b92af8788077aed72924bd6f92f&amp;oe=5FCB2161" />
+                                    </a>
+                                </div>
+                            <div class="social-meta__detail">
+                                <h4 class="social-meta__name">
+@bnpparibasfortis                                </h4>
+                                <span class="social-meta__time">Nov 5 17:28 </span>
+                            </div>
+                        </div>
+                        <ul class="social-icon__list">
+                            <li class="social-icon__item share">
+                                <a class="social-icon icon-connect open-share__box"></a>
+                                <div class="share__box">
+                                    <ul class="share__box-icons-list">
+                                        <li class="share__box-icons-items"><a class="icon-twitter" href="https://twitter.com/home?status=https://www.instagram.com/p/CHQSDMejggi/" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.instagram.com/p/CHQSDMejggi/" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-linkedin-mini" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.instagram.com/p/CHQSDMejggi/&amp;title=&amp;summary=&amp;source=" target="_blank" onclick="return !window.open(this.href, 'LinkedIn', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items hidden-lg"><a class="icon-whats-app" href="whatsapp://send?text=https://www.instagram.com/p/CHQSDMejggi/"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-mail-mini" href="mailto:?subject=SocialWall&amp;body=https://www.instagram.com/p/CHQSDMejggi/"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="modal-info">
+                                    <span>Share</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item repost">
+                                <a class="social-icon icon-repost" href="https://twitter.com/intent/retweet?tweet_id=3196047817189564" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Retweet</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item like">
+                                <a class="social-icon icon-like-stroke" href="https://twitter.com/intent/like?tweet_id=3196047817189564" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Like</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content-box--social content-box--instagram">
+                        <div class="content-box__type-label">
+                            <span class="sr-only">instagram</span>
+                            <i class="icon-type-instagram"></i>
+                        </div>
+                            <div class="social-content-picture">
+                                <a class="social-content-media" href="https://www.instagram.com/p/CHNz3wOgBA6/" target="_blank">
+                                    <img src="https://www.instagram.com/p/CHNz3wOgBA6/media/?size=l" alt="" />
+                                </a>
+                            </div>
+                        <div class="social-content">
+                            <span class="social-content__text" data-lining data-from="5" data-auto-resize>Nous sommes heureux de vous annoncer notre partenariat avec Touring. Nous pourrons offrir à nos clients le meilleur de l'assistance voyage à l'étranger. Découvrez en détails tous les avantages de cette nouvelle collaboration. <a class="hashtag" href="https://www.instagram.com/explore/tags/PositiveBanking" target="_blank">#PositiveBanking</a>
+</span>
+                        </div>
+                        
+                        <div class="social-meta">
+                                <div class="social-meta__avatar">
+                                    <a target="_blank">
+                                        <img src="../scontent-bru2-1.xx.fbcdn.net/v/t51.2885-15/57253568_420991278721765_25924551447674880_nc7e0.jpg?_nc_cat=1&amp;ccb=2&amp;_nc_sid=86c713&amp;_nc_ohc=UKekpg_XfdEAX94Wr0b&amp;_nc_ht=scontent-bru2-1.xx&amp;oh=c9cf4acc5dca09fbe86f84ca09ec01bb&amp;oe=5FCB2161" />
+                                    </a>
+                                </div>
+                            <div class="social-meta__detail">
+                                <h4 class="social-meta__name">
+@bnpparibasfortis                                </h4>
+                                <span class="social-meta__time">Nov 5 17:28 </span>
+                            </div>
+                        </div>
+                        <ul class="social-icon__list">
+                            <li class="social-icon__item share">
+                                <a class="social-icon icon-connect open-share__box"></a>
+                                <div class="share__box">
+                                    <ul class="share__box-icons-list">
+                                        <li class="share__box-icons-items"><a class="icon-twitter" href="https://twitter.com/home?status=https://www.instagram.com/p/CHNz3wOgBA6/" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.instagram.com/p/CHNz3wOgBA6/" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-linkedin-mini" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.instagram.com/p/CHNz3wOgBA6/&amp;title=&amp;summary=&amp;source=" target="_blank" onclick="return !window.open(this.href, 'LinkedIn', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items hidden-lg"><a class="icon-whats-app" href="whatsapp://send?text=https://www.instagram.com/p/CHNz3wOgBA6/"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-mail-mini" href="mailto:?subject=SocialWall&amp;body=https://www.instagram.com/p/CHNz3wOgBA6/"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="modal-info">
+                                    <span>Share</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item repost">
+                                <a class="social-icon icon-repost" href="https://twitter.com/intent/retweet?tweet_id=4538355819567649" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Retweet</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item like">
+                                <a class="social-icon icon-like-stroke" href="https://twitter.com/intent/like?tweet_id=4538355819567649" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Like</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content-box--social content-box--instagram">
+                        <div class="content-box__type-label">
+                            <span class="sr-only">instagram</span>
+                            <i class="icon-type-instagram"></i>
+                        </div>
+                            <div class="social-content-picture">
+                                <a class="social-content-media" href="https://www.instagram.com/p/CHQSDMejggi/" target="_blank">
+                                    <img src="https://www.instagram.com/p/CHQSDMejggi/media/?size=l" alt="" />
+                                </a>
+                            </div>
+                        <div class="social-content">
+                            <span class="social-content__text" data-lining data-from="5" data-auto-resize>Nous sommes heureux de vous annoncer notre partenariat avec Touring. Nous pourrons offrir à nos clients le meilleur de l'assistance voyage à l'étranger. Découvrez en détails tous les avantages de cette nouvelle collaboration. <a class="hashtag" href="https://www.instagram.com/explore/tags/PositiveBanking" target="_blank">#PositiveBanking</a>
+</span>
+                        </div>
+                        
+                        <div class="social-meta">
+                                <div class="social-meta__avatar">
+                                    <a target="_blank">
+                                        <img src="../scontent-bru2-1.xx.fbcdn.net/v/t51.2885-15/57253568_420991278721765_25924551447674880_nf358.jpg?_nc_cat=1&amp;ccb=2&amp;_nc_sid=86c713&amp;_nc_ohc=nfoaV2KQ_MgAX-hXngV&amp;_nc_ht=scontent-bru2-1.xx&amp;oh=4d07518b616e6c11c7e3e57903a53aa7&amp;oe=5FCB2161" />
+                                    </a>
+                                </div>
+                            <div class="social-meta__detail">
+                                <h4 class="social-meta__name">
+@bnpparibasfortis                                </h4>
+                                <span class="social-meta__time">Nov 5 17:28 </span>
+                            </div>
+                        </div>
+                        <ul class="social-icon__list">
+                            <li class="social-icon__item share">
+                                <a class="social-icon icon-connect open-share__box"></a>
+                                <div class="share__box">
+                                    <ul class="share__box-icons-list">
+                                        <li class="share__box-icons-items"><a class="icon-twitter" href="https://twitter.com/home?status=https://www.instagram.com/p/CHQSDMejggi/" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.instagram.com/p/CHQSDMejggi/" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-linkedin-mini" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.instagram.com/p/CHQSDMejggi/&amp;title=&amp;summary=&amp;source=" target="_blank" onclick="return !window.open(this.href, 'LinkedIn', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items hidden-lg"><a class="icon-whats-app" href="whatsapp://send?text=https://www.instagram.com/p/CHQSDMejggi/"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-mail-mini" href="mailto:?subject=SocialWall&amp;body=https://www.instagram.com/p/CHQSDMejggi/"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="modal-info">
+                                    <span>Share</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item repost">
+                                <a class="social-icon icon-repost" href="https://twitter.com/intent/retweet?tweet_id=4538355819567649" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Retweet</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item like">
+                                <a class="social-icon icon-like-stroke" href="https://twitter.com/intent/like?tweet_id=4538355819567649" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Like</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content-box--social content-box--instagram">
+                        <div class="content-box__type-label">
+                            <span class="sr-only">instagram</span>
+                            <i class="icon-type-instagram"></i>
+                        </div>
+                            <div class="social-content-picture">
+                                <a class="social-content-media" href="https://www.instagram.com/p/CHLP2SGjNqL/" target="_blank">
+                                    <img src="https://www.instagram.com/p/CHLP2SGjNqL/media/?size=l" alt="" />
+                                </a>
+                            </div>
+                        <div class="social-content">
+                            <span class="social-content__text" data-lining data-from="5" data-auto-resize></span>
+                        </div>
+                        
+                        <div class="social-meta">
+                                <div class="social-meta__avatar">
+                                    <a target="_blank">
+                                        <img src="../scontent-bru2-1.xx.fbcdn.net/v/t51.2885-15/42775770_273807409909350_3987007377688756224_na0c1.jpg?_nc_cat=103&amp;ccb=2&amp;_nc_sid=86c713&amp;_nc_ohc=qgXNpNMaqiEAX9M-lRJ&amp;_nc_ht=scontent-bru2-1.xx&amp;oh=9045a22920964c997a778c5bbe1fd4ef&amp;oe=5FC98E22" />
+                                    </a>
+                                </div>
+                            <div class="social-meta__detail">
+                                <h4 class="social-meta__name">
+@hellobankbelgium                                </h4>
+                                <span class="social-meta__time">Nov 4 17:34 </span>
+                            </div>
+                        </div>
+                        <ul class="social-icon__list">
+                            <li class="social-icon__item share">
+                                <a class="social-icon icon-connect open-share__box"></a>
+                                <div class="share__box">
+                                    <ul class="share__box-icons-list">
+                                        <li class="share__box-icons-items"><a class="icon-twitter" href="https://twitter.com/home?status=https://www.instagram.com/p/CHLP2SGjNqL/" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.instagram.com/p/CHLP2SGjNqL/" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-linkedin-mini" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.instagram.com/p/CHLP2SGjNqL/&amp;title=&amp;summary=&amp;source=" target="_blank" onclick="return !window.open(this.href, 'LinkedIn', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items hidden-lg"><a class="icon-whats-app" href="whatsapp://send?text=https://www.instagram.com/p/CHLP2SGjNqL/"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-mail-mini" href="mailto:?subject=SocialWall&amp;body=https://www.instagram.com/p/CHLP2SGjNqL/"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="modal-info">
+                                    <span>Share</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item repost">
+                                <a class="social-icon icon-repost" href="https://twitter.com/intent/retweet?tweet_id=4615913001783084" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Retweet</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item like">
+                                <a class="social-icon icon-like-stroke" href="https://twitter.com/intent/like?tweet_id=4615913001783084" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Like</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content-box--social content-box--instagram">
+                        <div class="content-box__type-label">
+                            <span class="sr-only">instagram</span>
+                            <i class="icon-type-instagram"></i>
+                        </div>
+                            <div class="social-content-picture">
+                                <a class="social-content-media" href="https://www.instagram.com/p/CHLnrabDRw8/" target="_blank">
+                                    <img src="https://www.instagram.com/p/CHLnrabDRw8/media/?size=l" alt="" />
+                                </a>
+                            </div>
+                        <div class="social-content">
+                            <span class="social-content__text" data-lining data-from="5" data-auto-resize></span>
+                        </div>
+                        
+                        <div class="social-meta">
+                                <div class="social-meta__avatar">
+                                    <a target="_blank">
+                                        <img src="../scontent-bru2-1.xx.fbcdn.net/v/t51.2885-15/42775770_273807409909350_3987007377688756224_n8f22.jpg?_nc_cat=103&amp;ccb=2&amp;_nc_sid=86c713&amp;_nc_ohc=hyZl3485z28AX9OxFex&amp;_nc_ht=scontent-bru2-1.xx&amp;oh=45ad205073351a57a7996dedb6fe9d49&amp;oe=5FC98E22" />
+                                    </a>
+                                </div>
+                            <div class="social-meta__detail">
+                                <h4 class="social-meta__name">
+@hellobankbelgium                                </h4>
+                                <span class="social-meta__time">Nov 4 17:34 </span>
+                            </div>
+                        </div>
+                        <ul class="social-icon__list">
+                            <li class="social-icon__item share">
+                                <a class="social-icon icon-connect open-share__box"></a>
+                                <div class="share__box">
+                                    <ul class="share__box-icons-list">
+                                        <li class="share__box-icons-items"><a class="icon-twitter" href="https://twitter.com/home?status=https://www.instagram.com/p/CHLnrabDRw8/" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.instagram.com/p/CHLnrabDRw8/" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-linkedin-mini" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.instagram.com/p/CHLnrabDRw8/&amp;title=&amp;summary=&amp;source=" target="_blank" onclick="return !window.open(this.href, 'LinkedIn', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items hidden-lg"><a class="icon-whats-app" href="whatsapp://send?text=https://www.instagram.com/p/CHLnrabDRw8/"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-mail-mini" href="mailto:?subject=SocialWall&amp;body=https://www.instagram.com/p/CHLnrabDRw8/"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="modal-info">
+                                    <span>Share</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item repost">
+                                <a class="social-icon icon-repost" href="https://twitter.com/intent/retweet?tweet_id=3421402954603297" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Retweet</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item like">
+                                <a class="social-icon icon-like-stroke" href="https://twitter.com/intent/like?tweet_id=3421402954603297" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Like</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content-box--social content-box--instagram">
+                        <div class="content-box__type-label">
+                            <span class="sr-only">instagram</span>
+                            <i class="icon-type-instagram"></i>
+                        </div>
+                            <div class="social-content-picture">
+                                <a class="social-content-media" href="https://www.instagram.com/p/CHLP2R3DvK7/" target="_blank">
+                                    <img src="https://www.instagram.com/p/CHLP2R3DvK7/media/?size=l" alt="" />
+                                </a>
+                            </div>
+                        <div class="social-content">
+                            <span class="social-content__text" data-lining data-from="5" data-auto-resize></span>
+                        </div>
+                        
+                        <div class="social-meta">
+                                <div class="social-meta__avatar">
+                                    <a target="_blank">
+                                        <img src="../scontent-bru2-1.xx.fbcdn.net/v/t51.2885-15/42775770_273807409909350_3987007377688756224_na0c1.jpg?_nc_cat=103&amp;ccb=2&amp;_nc_sid=86c713&amp;_nc_ohc=qgXNpNMaqiEAX9M-lRJ&amp;_nc_ht=scontent-bru2-1.xx&amp;oh=9045a22920964c997a778c5bbe1fd4ef&amp;oe=5FC98E22" />
+                                    </a>
+                                </div>
+                            <div class="social-meta__detail">
+                                <h4 class="social-meta__name">
+@hellobankbelgium                                </h4>
+                                <span class="social-meta__time">Nov 4 17:34 </span>
+                            </div>
+                        </div>
+                        <ul class="social-icon__list">
+                            <li class="social-icon__item share">
+                                <a class="social-icon icon-connect open-share__box"></a>
+                                <div class="share__box">
+                                    <ul class="share__box-icons-list">
+                                        <li class="share__box-icons-items"><a class="icon-twitter" href="https://twitter.com/home?status=https://www.instagram.com/p/CHLP2R3DvK7/" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.instagram.com/p/CHLP2R3DvK7/" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-linkedin-mini" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.instagram.com/p/CHLP2R3DvK7/&amp;title=&amp;summary=&amp;source=" target="_blank" onclick="return !window.open(this.href, 'LinkedIn', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items hidden-lg"><a class="icon-whats-app" href="whatsapp://send?text=https://www.instagram.com/p/CHLP2R3DvK7/"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-mail-mini" href="mailto:?subject=SocialWall&amp;body=https://www.instagram.com/p/CHLP2R3DvK7/"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="modal-info">
+                                    <span>Share</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item repost">
+                                <a class="social-icon icon-repost" href="https://twitter.com/intent/retweet?tweet_id=4615913001783084" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Retweet</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item like">
+                                <a class="social-icon icon-like-stroke" href="https://twitter.com/intent/like?tweet_id=4615913001783084" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Like</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content-box--social content-box--instagram">
+                        <div class="content-box__type-label">
+                            <span class="sr-only">instagram</span>
+                            <i class="icon-type-instagram"></i>
+                        </div>
+                            <div class="social-content-picture">
+                                <a class="social-content-media" href="https://www.instagram.com/p/CHLP2TxDvve/" target="_blank">
+                                    <img src="https://www.instagram.com/p/CHLP2TxDvve/media/?size=l" alt="" />
+                                </a>
+                            </div>
+                        <div class="social-content">
+                            <span class="social-content__text" data-lining data-from="5" data-auto-resize></span>
+                        </div>
+                        
+                        <div class="social-meta">
+                                <div class="social-meta__avatar">
+                                    <a target="_blank">
+                                        <img src="../scontent-bru2-1.xx.fbcdn.net/v/t51.2885-15/42775770_273807409909350_3987007377688756224_na0c1.jpg?_nc_cat=103&amp;ccb=2&amp;_nc_sid=86c713&amp;_nc_ohc=qgXNpNMaqiEAX9M-lRJ&amp;_nc_ht=scontent-bru2-1.xx&amp;oh=9045a22920964c997a778c5bbe1fd4ef&amp;oe=5FC98E22" />
+                                    </a>
+                                </div>
+                            <div class="social-meta__detail">
+                                <h4 class="social-meta__name">
+@hellobankbelgium                                </h4>
+                                <span class="social-meta__time">Nov 4 17:34 </span>
+                            </div>
+                        </div>
+                        <ul class="social-icon__list">
+                            <li class="social-icon__item share">
+                                <a class="social-icon icon-connect open-share__box"></a>
+                                <div class="share__box">
+                                    <ul class="share__box-icons-list">
+                                        <li class="share__box-icons-items"><a class="icon-twitter" href="https://twitter.com/home?status=https://www.instagram.com/p/CHLP2TxDvve/" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.instagram.com/p/CHLP2TxDvve/" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-linkedin-mini" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.instagram.com/p/CHLP2TxDvve/&amp;title=&amp;summary=&amp;source=" target="_blank" onclick="return !window.open(this.href, 'LinkedIn', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items hidden-lg"><a class="icon-whats-app" href="whatsapp://send?text=https://www.instagram.com/p/CHLP2TxDvve/"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-mail-mini" href="mailto:?subject=SocialWall&amp;body=https://www.instagram.com/p/CHLP2TxDvve/"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="modal-info">
+                                    <span>Share</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item repost">
+                                <a class="social-icon icon-repost" href="https://twitter.com/intent/retweet?tweet_id=4615913001783084" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Retweet</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item like">
+                                <a class="social-icon icon-like-stroke" href="https://twitter.com/intent/like?tweet_id=4615913001783084" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Like</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content-box--social content-box--instagram">
+                        <div class="content-box__type-label">
+                            <span class="sr-only">instagram</span>
+                            <i class="icon-type-instagram"></i>
+                        </div>
+                            <div class="social-content-picture">
+                                <a class="social-content-media" href="https://www.instagram.com/p/CHLnr5WjoUV/" target="_blank">
+                                    <img src="https://www.instagram.com/p/CHLnr5WjoUV/media/?size=l" alt="" />
+                                </a>
+                            </div>
+                        <div class="social-content">
+                            <span class="social-content__text" data-lining data-from="5" data-auto-resize></span>
+                        </div>
+                        
+                        <div class="social-meta">
+                                <div class="social-meta__avatar">
+                                    <a target="_blank">
+                                        <img src="../scontent-bru2-1.xx.fbcdn.net/v/t51.2885-15/42775770_273807409909350_3987007377688756224_n8f22.jpg?_nc_cat=103&amp;ccb=2&amp;_nc_sid=86c713&amp;_nc_ohc=hyZl3485z28AX9OxFex&amp;_nc_ht=scontent-bru2-1.xx&amp;oh=45ad205073351a57a7996dedb6fe9d49&amp;oe=5FC98E22" />
+                                    </a>
+                                </div>
+                            <div class="social-meta__detail">
+                                <h4 class="social-meta__name">
+@hellobankbelgium                                </h4>
+                                <span class="social-meta__time">Nov 4 17:34 </span>
+                            </div>
+                        </div>
+                        <ul class="social-icon__list">
+                            <li class="social-icon__item share">
+                                <a class="social-icon icon-connect open-share__box"></a>
+                                <div class="share__box">
+                                    <ul class="share__box-icons-list">
+                                        <li class="share__box-icons-items"><a class="icon-twitter" href="https://twitter.com/home?status=https://www.instagram.com/p/CHLnr5WjoUV/" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.instagram.com/p/CHLnr5WjoUV/" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-linkedin-mini" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.instagram.com/p/CHLnr5WjoUV/&amp;title=&amp;summary=&amp;source=" target="_blank" onclick="return !window.open(this.href, 'LinkedIn', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items hidden-lg"><a class="icon-whats-app" href="whatsapp://send?text=https://www.instagram.com/p/CHLnr5WjoUV/"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-mail-mini" href="mailto:?subject=SocialWall&amp;body=https://www.instagram.com/p/CHLnr5WjoUV/"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="modal-info">
+                                    <span>Share</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item repost">
+                                <a class="social-icon icon-repost" href="https://twitter.com/intent/retweet?tweet_id=3421402954603297" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Retweet</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item like">
+                                <a class="social-icon icon-like-stroke" href="https://twitter.com/intent/like?tweet_id=3421402954603297" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Like</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content-box--social content-box--instagram">
+                        <div class="content-box__type-label">
+                            <span class="sr-only">instagram</span>
+                            <i class="icon-type-instagram"></i>
+                        </div>
+                            <div class="social-content-picture">
+                                <a class="social-content-media" href="https://www.instagram.com/p/CHLP169j527/" target="_blank">
+                                    <img src="https://www.instagram.com/p/CHLP169j527/media/?size=l" alt="" />
+                                </a>
+                            </div>
+                        <div class="social-content">
+                            <span class="social-content__text" data-lining data-from="5" data-auto-resize></span>
+                        </div>
+                        
+                        <div class="social-meta">
+                                <div class="social-meta__avatar">
+                                    <a target="_blank">
+                                        <img src="../scontent-bru2-1.xx.fbcdn.net/v/t51.2885-15/42775770_273807409909350_3987007377688756224_na0c1.jpg?_nc_cat=103&amp;ccb=2&amp;_nc_sid=86c713&amp;_nc_ohc=qgXNpNMaqiEAX9M-lRJ&amp;_nc_ht=scontent-bru2-1.xx&amp;oh=9045a22920964c997a778c5bbe1fd4ef&amp;oe=5FC98E22" />
+                                    </a>
+                                </div>
+                            <div class="social-meta__detail">
+                                <h4 class="social-meta__name">
+@hellobankbelgium                                </h4>
+                                <span class="social-meta__time">Nov 4 17:34 </span>
+                            </div>
+                        </div>
+                        <ul class="social-icon__list">
+                            <li class="social-icon__item share">
+                                <a class="social-icon icon-connect open-share__box"></a>
+                                <div class="share__box">
+                                    <ul class="share__box-icons-list">
+                                        <li class="share__box-icons-items"><a class="icon-twitter" href="https://twitter.com/home?status=https://www.instagram.com/p/CHLP169j527/" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.instagram.com/p/CHLP169j527/" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-linkedin-mini" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.instagram.com/p/CHLP169j527/&amp;title=&amp;summary=&amp;source=" target="_blank" onclick="return !window.open(this.href, 'LinkedIn', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items hidden-lg"><a class="icon-whats-app" href="whatsapp://send?text=https://www.instagram.com/p/CHLP169j527/"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-mail-mini" href="mailto:?subject=SocialWall&amp;body=https://www.instagram.com/p/CHLP169j527/"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="modal-info">
+                                    <span>Share</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item repost">
+                                <a class="social-icon icon-repost" href="https://twitter.com/intent/retweet?tweet_id=4615913001783084" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Retweet</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item like">
+                                <a class="social-icon icon-like-stroke" href="https://twitter.com/intent/like?tweet_id=4615913001783084" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Like</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content-box--social content-box--instagram">
+                        <div class="content-box__type-label">
+                            <span class="sr-only">instagram</span>
+                            <i class="icon-type-instagram"></i>
+                        </div>
+                            <div class="social-content-picture">
+                                <a class="social-content-media" href="https://www.instagram.com/p/CHLnr0YDxE4/" target="_blank">
+                                    <img src="https://www.instagram.com/p/CHLnr0YDxE4/media/?size=l" alt="" />
+                                </a>
+                            </div>
+                        <div class="social-content">
+                            <span class="social-content__text" data-lining data-from="5" data-auto-resize></span>
+                        </div>
+                        
+                        <div class="social-meta">
+                                <div class="social-meta__avatar">
+                                    <a target="_blank">
+                                        <img src="../scontent-bru2-1.xx.fbcdn.net/v/t51.2885-15/42775770_273807409909350_3987007377688756224_n8f22.jpg?_nc_cat=103&amp;ccb=2&amp;_nc_sid=86c713&amp;_nc_ohc=hyZl3485z28AX9OxFex&amp;_nc_ht=scontent-bru2-1.xx&amp;oh=45ad205073351a57a7996dedb6fe9d49&amp;oe=5FC98E22" />
+                                    </a>
+                                </div>
+                            <div class="social-meta__detail">
+                                <h4 class="social-meta__name">
+@hellobankbelgium                                </h4>
+                                <span class="social-meta__time">Nov 4 17:34 </span>
+                            </div>
+                        </div>
+                        <ul class="social-icon__list">
+                            <li class="social-icon__item share">
+                                <a class="social-icon icon-connect open-share__box"></a>
+                                <div class="share__box">
+                                    <ul class="share__box-icons-list">
+                                        <li class="share__box-icons-items"><a class="icon-twitter" href="https://twitter.com/home?status=https://www.instagram.com/p/CHLnr0YDxE4/" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.instagram.com/p/CHLnr0YDxE4/" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-linkedin-mini" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.instagram.com/p/CHLnr0YDxE4/&amp;title=&amp;summary=&amp;source=" target="_blank" onclick="return !window.open(this.href, 'LinkedIn', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items hidden-lg"><a class="icon-whats-app" href="whatsapp://send?text=https://www.instagram.com/p/CHLnr0YDxE4/"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-mail-mini" href="mailto:?subject=SocialWall&amp;body=https://www.instagram.com/p/CHLnr0YDxE4/"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="modal-info">
+                                    <span>Share</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item repost">
+                                <a class="social-icon icon-repost" href="https://twitter.com/intent/retweet?tweet_id=3421402954603297" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Retweet</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item like">
+                                <a class="social-icon icon-like-stroke" href="https://twitter.com/intent/like?tweet_id=3421402954603297" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Like</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content-box--social content-box--instagram">
+                        <div class="content-box__type-label">
+                            <span class="sr-only">instagram</span>
+                            <i class="icon-type-instagram"></i>
+                        </div>
+                            <div class="social-content-picture">
+                                <a class="social-content-media" href="https://www.instagram.com/p/CHLP1hHjomT/" target="_blank">
+                                    <img src="https://www.instagram.com/p/CHLP1hHjomT/media/?size=l" alt="" />
+                                </a>
+                            </div>
+                        <div class="social-content">
+                            <span class="social-content__text" data-lining data-from="5" data-auto-resize></span>
+                        </div>
+                        
+                        <div class="social-meta">
+                                <div class="social-meta__avatar">
+                                    <a target="_blank">
+                                        <img src="../scontent-bru2-1.xx.fbcdn.net/v/t51.2885-15/42775770_273807409909350_3987007377688756224_na0c1.jpg?_nc_cat=103&amp;ccb=2&amp;_nc_sid=86c713&amp;_nc_ohc=qgXNpNMaqiEAX9M-lRJ&amp;_nc_ht=scontent-bru2-1.xx&amp;oh=9045a22920964c997a778c5bbe1fd4ef&amp;oe=5FC98E22" />
+                                    </a>
+                                </div>
+                            <div class="social-meta__detail">
+                                <h4 class="social-meta__name">
+@hellobankbelgium                                </h4>
+                                <span class="social-meta__time">Nov 4 17:34 </span>
+                            </div>
+                        </div>
+                        <ul class="social-icon__list">
+                            <li class="social-icon__item share">
+                                <a class="social-icon icon-connect open-share__box"></a>
+                                <div class="share__box">
+                                    <ul class="share__box-icons-list">
+                                        <li class="share__box-icons-items"><a class="icon-twitter" href="https://twitter.com/home?status=https://www.instagram.com/p/CHLP1hHjomT/" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.instagram.com/p/CHLP1hHjomT/" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-linkedin-mini" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.instagram.com/p/CHLP1hHjomT/&amp;title=&amp;summary=&amp;source=" target="_blank" onclick="return !window.open(this.href, 'LinkedIn', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items hidden-lg"><a class="icon-whats-app" href="whatsapp://send?text=https://www.instagram.com/p/CHLP1hHjomT/"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-mail-mini" href="mailto:?subject=SocialWall&amp;body=https://www.instagram.com/p/CHLP1hHjomT/"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="modal-info">
+                                    <span>Share</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item repost">
+                                <a class="social-icon icon-repost" href="https://twitter.com/intent/retweet?tweet_id=4615913001783084" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Retweet</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item like">
+                                <a class="social-icon icon-like-stroke" href="https://twitter.com/intent/like?tweet_id=4615913001783084" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Like</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content-box--social content-box--instagram">
+                        <div class="content-box__type-label">
+                            <span class="sr-only">instagram</span>
+                            <i class="icon-type-instagram"></i>
+                        </div>
+                            <div class="social-content-picture">
+                                <a class="social-content-media" href="https://www.instagram.com/p/CHLP1jPDTqT/" target="_blank">
+                                    <img src="https://www.instagram.com/p/CHLP1jPDTqT/media/?size=l" alt="" />
+                                </a>
+                            </div>
+                        <div class="social-content">
+                            <span class="social-content__text" data-lining data-from="5" data-auto-resize></span>
+                        </div>
+                        
+                        <div class="social-meta">
+                                <div class="social-meta__avatar">
+                                    <a target="_blank">
+                                        <img src="../scontent-bru2-1.xx.fbcdn.net/v/t51.2885-15/42775770_273807409909350_3987007377688756224_na0c1.jpg?_nc_cat=103&amp;ccb=2&amp;_nc_sid=86c713&amp;_nc_ohc=qgXNpNMaqiEAX9M-lRJ&amp;_nc_ht=scontent-bru2-1.xx&amp;oh=9045a22920964c997a778c5bbe1fd4ef&amp;oe=5FC98E22" />
+                                    </a>
+                                </div>
+                            <div class="social-meta__detail">
+                                <h4 class="social-meta__name">
+@hellobankbelgium                                </h4>
+                                <span class="social-meta__time">Nov 4 17:34 </span>
+                            </div>
+                        </div>
+                        <ul class="social-icon__list">
+                            <li class="social-icon__item share">
+                                <a class="social-icon icon-connect open-share__box"></a>
+                                <div class="share__box">
+                                    <ul class="share__box-icons-list">
+                                        <li class="share__box-icons-items"><a class="icon-twitter" href="https://twitter.com/home?status=https://www.instagram.com/p/CHLP1jPDTqT/" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.instagram.com/p/CHLP1jPDTqT/" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-linkedin-mini" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.instagram.com/p/CHLP1jPDTqT/&amp;title=&amp;summary=&amp;source=" target="_blank" onclick="return !window.open(this.href, 'LinkedIn', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items hidden-lg"><a class="icon-whats-app" href="whatsapp://send?text=https://www.instagram.com/p/CHLP1jPDTqT/"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-mail-mini" href="mailto:?subject=SocialWall&amp;body=https://www.instagram.com/p/CHLP1jPDTqT/"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="modal-info">
+                                    <span>Share</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item repost">
+                                <a class="social-icon icon-repost" href="https://twitter.com/intent/retweet?tweet_id=4615913001783084" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Retweet</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item like">
+                                <a class="social-icon icon-like-stroke" href="https://twitter.com/intent/like?tweet_id=4615913001783084" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Like</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="content-box--social content-box--instagram">
+                        <div class="content-box__type-label">
+                            <span class="sr-only">instagram</span>
+                            <i class="icon-type-instagram"></i>
+                        </div>
+                            <div class="social-content-picture">
+                                <a class="social-content-media" href="https://www.instagram.com/p/CHLnraDjX8j/" target="_blank">
+                                    <img src="https://www.instagram.com/p/CHLnraDjX8j/media/?size=l" alt="" />
+                                </a>
+                            </div>
+                        <div class="social-content">
+                            <span class="social-content__text" data-lining data-from="5" data-auto-resize></span>
+                        </div>
+                        
+                        <div class="social-meta">
+                                <div class="social-meta__avatar">
+                                    <a target="_blank">
+                                        <img src="../scontent-bru2-1.xx.fbcdn.net/v/t51.2885-15/42775770_273807409909350_3987007377688756224_n8f22.jpg?_nc_cat=103&amp;ccb=2&amp;_nc_sid=86c713&amp;_nc_ohc=hyZl3485z28AX9OxFex&amp;_nc_ht=scontent-bru2-1.xx&amp;oh=45ad205073351a57a7996dedb6fe9d49&amp;oe=5FC98E22" />
+                                    </a>
+                                </div>
+                            <div class="social-meta__detail">
+                                <h4 class="social-meta__name">
+@hellobankbelgium                                </h4>
+                                <span class="social-meta__time">Nov 4 17:34 </span>
+                            </div>
+                        </div>
+                        <ul class="social-icon__list">
+                            <li class="social-icon__item share">
+                                <a class="social-icon icon-connect open-share__box"></a>
+                                <div class="share__box">
+                                    <ul class="share__box-icons-list">
+                                        <li class="share__box-icons-items"><a class="icon-twitter" href="https://twitter.com/home?status=https://www.instagram.com/p/CHLnraDjX8j/" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.instagram.com/p/CHLnraDjX8j/" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-linkedin-mini" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.instagram.com/p/CHLnraDjX8j/&amp;title=&amp;summary=&amp;source=" target="_blank" onclick="return !window.open(this.href, 'LinkedIn', 'width=500,height=500')"></a></li>
+                                        <li class="share__box-icons-items hidden-lg"><a class="icon-whats-app" href="whatsapp://send?text=https://www.instagram.com/p/CHLnraDjX8j/"></a></li>
+                                        <li class="share__box-icons-items"><a class="icon-mail-mini" href="mailto:?subject=SocialWall&amp;body=https://www.instagram.com/p/CHLnraDjX8j/"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="modal-info">
+                                    <span>Share</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item repost">
+                                <a class="social-icon icon-repost" href="https://twitter.com/intent/retweet?tweet_id=3421402954603297" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Retweet</span>
+                                </div>
+                            </li>
+                            <li class="social-icon__item like">
+                                <a class="social-icon icon-like-stroke" href="https://twitter.com/intent/like?tweet_id=3421402954603297" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"></a>
+                                <div class="modal-info">
+                                    <span>Like</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+            </ul>
+        </div>
+    </div>
+ </div> </div> <div class="pre-footer"> <div class="container"> 
+ </div> </div> </div> <footer id="mainFooter" class="main-footer"> <div class="main-footer__link"> <div class="container clearfix"> 
+<div class="sf_cols" data-sf-element="Row">
+    <div class="sf_colsOut sf_4cols_1_25">
+        <div id="MainFooterLink_TE85E2F2C009_Col00" class="sf_colsIn sf_4cols_1in_25" data-sf-element="Column 1">
+<div >
+    <div class="sf-Long-text" ><h2>General</h2></div>    
+</div>
+<nav class="footer-link" role="navigation">
+
+    <ul>
+            <li>
+                <a href="contact.html" target="_self" class="link">Contact us</a>
+            </li>
+            <li>
+                <a href="other-websites.html" target="_self" class="link">Other websites</a>
+            </li>
+            <li>
+                <a href="https://www.bnpparibasfortis.be/nl/index-NL" target="_blank" class="link">Easy Banking</a>
+            </li>
+    </ul>
+</nav>
+
+
+
+
+            
+        </div>
+    </div>
+    <div class="sf_colsOut sf_4cols_2_25">
+        <div id="MainFooterLink_TE85E2F2C009_Col01" class="sf_colsIn sf_4cols_2in_25" data-sf-element="Column 2">
+<div >
+    <div class="sf-Long-text" ><h2>How to find us</h2></div>    
+</div>
+<nav class="footer-link" role="navigation">
+
+    <ul>
+            <li>
+                <a href="docs/default-source/default-document-library/access_bru_english_bnppf5014.pdf" target="_blank" class="link">Brussels</a>
+            </li>
+            <li>
+                <a href="docs/default-source/default-document-library/169c_bnppf_port_15025014.pdf" target="_blank" class="link">Havenlaan</a>
+            </li>
+            <li>
+                <a href="docs/default-source/default-document-library/130813_rolin_fam_eng5014.pdf" target="_blank" class="link">Espace Rolin</a>
+            </li>
+    </ul>
+</nav>
+
+
+
+
+            
+        </div>
+    </div>
+    <div class="sf_colsOut sf_4cols_3_25">
+        <div id="MainFooterLink_TE85E2F2C009_Col02" class="sf_colsIn sf_4cols_3in_25" data-sf-element="Column 3">
+<div >
+    <div class="sf-Long-text" ><h2>Links</h2></div>    
+</div>
+<nav class="footer-link" role="navigation">
+
+    <ul>
+            <li>
+                <a href="jobs/our-vacancies/all-vacancies.html" target="_self" class="link">Job Offer</a>
+            </li>
+            <li>
+                <a href="newsroom/press-releases.html" target="_self" class="link">Press Releases</a>
+            </li>
+            <li>
+                <a href="your-bank/about-us.html" target="_self" class="link">About Us</a>
+            </li>
+            <li>
+                <a href="newsroom/events.html" target="_self" class="link">Events</a>
+            </li>
+            <li>
+                <a href="our-commitment.html" target="_self" class="link">Our commitment</a>
+            </li>
+            <li>
+                <a href="positive-banking.html" target="_self" class="link">Positive Banking</a>
+            </li>
+    </ul>
+</nav>
+
+
+
+
+            
+        </div>
+    </div>
+    <div class="sf_colsOut sf_4cols_4_25">
+        <div id="MainFooterLink_TE85E2F2C009_Col03" class="sf_colsIn sf_4cols_4in_25" data-sf-element="Column 4">
+<div >
+    <div class="sf-Long-text" ><h2>Follow us</h2></div>    
+</div>
+<div >
+    <div class="sf-Long-text" ><div class="social-media-follow"><h4>BNP Paribas Fortis</h4><div class="social-media-follow__content"><a class="icon-facebook" href="https://www.facebook.com/BNPParibasFortisBelgique"></a><a class="icon-twitter" href="https://twitter.com/BNPPFBelgique"></a><a class="icon-youtube-square" href="https://www.youtube.com/user/bnppfbelgique"></a></div></div></div>    
+</div>
+<div >
+    <div class="sf-Long-text" ><div class="social-media-follow"><h4>We are Tennis</h4><div class="social-media-follow__content"><a class="icon-facebook" href="https://www.facebook.com/wearetennis.be"></a><a class="icon-youtube-square" href="https://www.youtube.com/user/WeAreTennisBelgique"></a></div></div></div>    
+</div>
+<div >
+    <div class="sf-Long-text" ><style>.footerCustomLink {
+display: block;
+font-family: BNPPSansReg, sans-serif !important;
+font-size: 14px;
+    color: #ffffff !important;
+    margin-top: 18px;
+}
+
+.footerCustomLink:hover {
+    color: #686868 !important;
+}</style>
+<a class="footerCustomLink" href="social-wall.html">Social Media Wall</a></div>    
+</div>
+            
+        </div>
+    </div>
+</div> </div> </div> <div class="container clearfix"> 
+
+<script src="../www.bnpparibasfortis.be/rsc/sys/script/js/pagebus/pagebus.js"></script>
+<div class="copyright-block">
+    &copy;BNP Paribas Fortis - 2020
+</div>
+<nav class="menu" role="navigation">
+
+    <ul>
+            <li class="menu__item ">
+                <a href="footer-pages/disclaimer.html" target="_self" class="link">Disclaimer</a>
+            </li>
+            <li class="menu__item ">
+                <a href="footer-pages/cookie-policy.html" target="_self" class="link">Cookie Policy</a>
+            </li>
+            <li class="menu__item ">
+                <a href="footer-pages/privacy-policy.html" target="_self" class="link">Privacy notice</a>
+            </li>
+            <li class="menu__item ">
+                <a href="https://www.bnpparibasfortis.be/fr/Epargner-et-placer/Decouvrez/Approche/Premier-investissement" target="_blank" class="link">MiFID Information</a>
+            </li>
+    </ul>
+</nav>
+
+
+
+ <hgroup class="footer-title-group"> <h2 class="block-logo"> <a href="https://group.bnpparibas/" class="link bnp-logo"> <span class="sr-only">BNP Paribas</span> </a> </h2> <h3 class="tagline">The bank for a changing world</h3> </hgroup> </div> </footer> </div> <script src="ResourcePackages/Newsroom/assets/dist/js/vendor/jquery-1.12.1.minefea.js?package=Corporate" type="text/javascript"></script><script src="ResourcePackages/Corporate/assets/dist/js/vendor/enquire.minefea.js?package=Corporate" type="text/javascript"></script><script src="ResourcePackages/Corporate/assets/dist/js/vendor/keymasterefea.js?package=Corporate" type="text/javascript"></script><script src="ResourcePackages/Corporate/assets/dist/js/vendor/handlebars-v4.0.5efea.js?package=Corporate" type="text/javascript"></script><script src="ResourcePackages/Corporate/assets/dist/js/vendor/handlebars.helpersefea.js?package=Corporate" type="text/javascript"></script><script src="ResourcePackages/Corporate/assets/dist/js/vendor/salvattore.minefea.js?package=Corporate" type="text/javascript"></script><script src="ResourcePackages/Corporate/assets/dist/js/vendor/jquery.waypoints.minefea.js?package=Corporate" type="text/javascript"></script><script src="ResourcePackages/Corporate/assets/dist/js/vendor/sticky.minefea.js?package=Corporate" type="text/javascript"></script><script src="ResourcePackages/Corporate/assets/dist/js/vendor/bootstrap.transitionefea.js?package=Corporate" type="text/javascript"></script><script src="ResourcePackages/Corporate/assets/dist/js/vendor/bootstrap.modalefea.js?package=Corporate" type="text/javascript"></script><script src="ResourcePackages/Corporate/assets/dist/js/vendor/jquery-ui.minefea.js?package=Corporate" type="text/javascript"></script><script src="ResourcePackages/Corporate/assets/dist/js/vendor/plyr.polyfilledefea.js?package=Corporate" type="text/javascript"></script><script src="ResourcePackages/Corporate/assets/dist/js/vendor/jquery.magnific-popup.minefea.js?package=Corporate" type="text/javascript"></script><script src="ResourcePackages/Corporate/assets/dist/js/pageBottomFixefea.js?package=Corporate" type="text/javascript"></script><script src="ResourcePackages/Corporate/assets/dist/js/mainefea.js?package=Corporate" type="text/javascript"></script><script src="ResourcePackages/Corporate/assets/dist/js/bnp.mainNavefea.js?package=Corporate" type="text/javascript"></script><script src="ResourcePackages/Corporate/assets/dist/js/suprabarefea.js?package=Corporate" type="text/javascript"></script><script src="ResourcePackages/Corporate/assets/dist/js/vendor/lining.minefea.js?package=Corporate" type="text/javascript"></script><script src="ResourcePackages/Corporate/assets/dist/js/vendor/masonry.pkgd.minefea.js?package=Corporate" type="text/javascript"></script><script src="ResourcePackages/Corporate/assets/dist/js/vendor/mediaelement-and-playerefea.js?package=Corporate" type="text/javascript"></script><script src="Frontend-Assembly/SitefinityWebApp/Mvc/Scripts/LanguageSelector/language-selectorae40.js?package=Corporate&amp;v=MTgyODg0NDA5MA%3d%3d" type="text/javascript"></script><script type="text/javascript" src="WebResourcec86d.js?d=yAZznlIeaGQJz8qTi4uqDXRPrAoLXb4hVkxvFHSdj7i6nxFXdWgwHA_2xRm8d8iTO7KoxfQ-h_OZbEcX0ZQA2sVHX9NmdburXBo7jladhv6PkrX6qHRIET4LLyYuAxRq0e1LHVhOWinZQuyoRypZ0w8Pe69LdPAkVb0k-0QSOdY1&amp;t=637394874260000000">
+
+</script><script type="text/javascript">
+	StatsClient.LogVisit('aef8dc1e-6f35-6ac6-89dd-ff00004366b6', '7961fdd0-da97-4cb5-8741-7c52f4695aa3');
+</script><input data-sf-role='fr' type='hidden' value='https://www.bnpparibasfortis.com/fr/social-wall'><input data-sf-role='nl' type='hidden' value='https://www.bnpparibasfortis.com/nl/social-wall'><input data-sf-role='en' type='hidden' value='https://www.bnpparibasfortis.com/social-wall'><input data-sf-role='fr' type='hidden' value='https://www.bnpparibasfortis.com/fr/social-wall'><input data-sf-role='nl' type='hidden' value='https://www.bnpparibasfortis.com/nl/social-wall'> </body> 
+<!-- Mirrored from www.bnpparibasfortis.com/social-wall by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Nov 2020 11:18:14 GMT -->
+</html>
